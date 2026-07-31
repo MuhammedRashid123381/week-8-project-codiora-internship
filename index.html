@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Rashid | Frontend Developer</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta
+      name="description"
+      content="Muhammad Rashid — Frontend Developer crafting responsive, accessible, and visually polished web applications with HTML, CSS, and JavaScript."
+    />
+    <meta
+      name="keywords"
+      content="Muhammad Rashid, Frontend Developer, Web Developer, Portfolio, HTML CSS JavaScript, Tando Jam, Pakistan"
+    />
+    <meta name="author" content="Muhammad Rashid" />
+    <meta name="theme-color" content="#9926f0" />
+    <meta property="og:title" content="Muhammad Rashid | Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Passionate about crafting responsive, visually appealing web applications with clean code and modern UI/UX principles."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/profile-hero.jpg" />
+    <link rel="icon" type="image/jpeg" href="images/profile-hero.jpg" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ================================================
+       NAVBAR
+  ================================================== -->
+    <nav id="navbar" class="navbar">
+      <div class="container nav-container">
+        <a href="#home" class="nav-logo">
+          <span class="logo-accent">M</span>Rashid
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <i class="bi bi-sun-fill"></i>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================================================
+       HERO SECTION
+  ================================================== -->
+    <section id="home" class="hero">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+
+      <div class="container hero-container">
+        <div class="hero-text" data-reveal>
+          <span class="hero-eyebrow">
+            <span class="dot"></span> Available for Internship
+          </span>
+          <h1 class="hero-heading">
+            Hi, I'm
+            <span class="gradient-text" id="heroName"
+              >Muhammad<br />Rashid</span
+            >
+          </h1>
+          <p class="hero-role">Frontend Developer</p>
+          <p class="hero-desc" id="heroDesc">
+            Passionate about crafting responsive, visually appealing web
+            applications with clean code and modern UI/UX principles.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <i class="bi bi-grid-3x3-gap-fill"></i> View Projects
+            </a>
+            <a
+              href="cv/mycv.pdf"
+              class="btn btn-outline"
+              id="downloadCvBtn"
+              download
+            >
+              <i class="bi bi-download"></i> Download CV
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="bi bi-envelope-fill"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="hero-stats" id="heroStats">
+            <div class="stat-pill">
+              <span class="stat-num">1+</span>
+              <span class="stat-label">Year Exp.</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">7+</span>
+              <span class="stat-label">Skills</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-illustration" data-reveal data-delay="200">
+          <div class="illus-card illus-card--main">
+            <img
+              src="images/profile-hero.jpg"
+              alt="Portrait of Muhammad Rashid, Frontend Developer"
+              width="900"
+              height="900"
+              class="hero-photo"
+              fetchpriority="high"
+            />
+            <span class="float-badge badge-html">HTML</span>
+            <span class="float-badge badge-css">CSS</span>
+            <span class="float-badge badge-js">JS</span>
+          </div>
+
+          <div class="ring ring-lg"></div>
+          <div class="ring ring-sm"></div>
+        </div>
+      </div>
+
+      <div class="hero-wave">
+        <svg
+          viewBox="0 0 1440 100"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,60 C360,120 1080,0 1440,60 L1440,100 L0,100 Z"
+            fill="#ffffff"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ================================================
+       ABOUT SECTION
+  ================================================== -->
+    <section id="about" class="section about">
+      <div class="container about-container">
+        <div class="about-visual" data-reveal>
+          <div class="about-card">
+            <img
+              src="images/profile-about.jpg"
+              alt="Muhammad Rashid, BSIT student and frontend developer"
+              width="760"
+              height="950"
+              class="about-photo"
+              loading="lazy"
+            />
+
+            <div class="about-info-pill">
+              <i class="bi bi-mortarboard-fill"></i>
+              <span>BSIT Student</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text" data-reveal data-delay="150">
+          <span class="section-eyebrow">Who I Am</span>
+          <h2 class="section-title">
+            Passionate About Building
+            <span class="gradient-text">Great Experiences</span>
+          </h2>
+          <p class="about-desc" id="aboutDesc1">
+            I'm Muhammad Rashid, a BSIT student at Sindh Agriculture University,
+            Tando Jam, with over a year of hands-on frontend development
+            experience.
+          </p>
+          <p class="about-desc" id="aboutDesc2">
+            My interest spans modern CSS techniques, JavaScript interactivity,
+            responsive layout systems, and UI/UX design thinking.
+          </p>
+
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="bi bi-mortarboard-fill"></i>
+              <div>
+                <strong>Education</strong>
+                <span id="aboutEducation"
+                  >BSIT - Sindh Agriculture University</span
+                >
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="bi bi-briefcase-fill"></i>
+              <div>
+                <strong>Experience</strong>
+                <span id="aboutExperience">1+ Year Frontend Development</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <div>
+                <strong>Career Goals</strong>
+                <span id="aboutGoals">Become A Full-stack Developer</span>
+              </div>
+            </div>
+            <div class="detail-item">
+              <i class="bi bi-heart-fill"></i>
+              <div>
+                <strong>Interests</strong>
+                <span id="aboutInterests">UI/UX Design, Modern Web Tech</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary"
+            >Let's Connect <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+       SKILLS SECTION
+  ================================================== -->
+    <section id="skills" class="section skills">
+      <div class="skills-wave-top">
+        <svg
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,40 C480,90 960,-10 1440,40 L1440,0 L0,0 Z"
+            fill="#ffffff"
+          />
+        </svg>
+      </div>
+
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-eyebrow">What I Know</span>
+          <h2 class="section-title">
+            My <span class="gradient-text">Technical Skills</span>
+          </h2>
+          <p class="section-subtitle">
+            A curated set of technologies I use to design and develop modern web
+            experiences.
+          </p>
+        </div>
+
+        <!-- Dynamic Skills Grid (Rendered by API) -->
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Skills will be rendered here by script.js -->
+        </div>
+      </div>
+
+      <div class="skills-wave-bottom">
+        <svg
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,40 C480,-10 960,90 1440,40 L1440,80 L0,80 Z"
+            fill="#ffffff"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ================================================
+       PROJECTS SECTION
+  ================================================== -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-eyebrow">My Work</span>
+          <h2 class="section-title">
+            Featured <span class="gradient-text">Projects</span>
+          </h2>
+          <p class="section-subtitle">
+            A selection of things I've built that showcase my frontend
+            development skills.
+          </p>
+        </div>
+
+        <div
+          class="project-filters"
+          data-reveal
+          role="tablist"
+          aria-label="Filter projects by category"
+        >
+          <button
+            type="button"
+            class="filter-btn active"
+            data-filter="all"
+            role="tab"
+            aria-selected="true"
+          >
+            All
+          </button>
+          <button
+            type="button"
+            class="filter-btn"
+            data-filter="web"
+            role="tab"
+            aria-selected="false"
+          >
+            Web Development
+          </button>
+          <button
+            type="button"
+            class="filter-btn"
+            data-filter="mobile"
+            role="tab"
+            aria-selected="false"
+          >
+            Mobile Development
+          </button>
+          <button
+            type="button"
+            class="filter-btn"
+            data-filter="uiux"
+            role="tab"
+            aria-selected="false"
+          >
+            UI/UX Design
+          </button>
+          <button
+            type="button"
+            class="filter-btn"
+            data-filter="data"
+            role="tab"
+            aria-selected="false"
+          >
+            Data Analysis
+          </button>
+          <button
+            type="button"
+            class="filter-btn"
+            data-filter="other"
+            role="tab"
+            aria-selected="false"
+          >
+            Other
+          </button>
+        </div>
+
+        <!-- Dynamic Projects Grid (Rendered by API) -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Projects will be rendered here by script.js -->
+        </div>
+
+        <p class="projects-empty" id="projectsEmpty" hidden>
+          No projects in this category yet — check back soon!
+        </p>
+      </div>
+    </section>
+
+    <!-- ================================================
+       SERVICES SECTION
+  ================================================== -->
+    <section id="services" class="section services">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-eyebrow">What I Offer</span>
+          <h2 class="section-title">
+            My <span class="gradient-text">Services</span>
+          </h2>
+          <p class="section-subtitle">
+            A few of the ways I can help bring a web project to life, from first
+            line of code to launch.
+          </p>
+        </div>
+
+        <div class="skills-grid" id="servicesGrid">
+          <div class="skill-card" data-reveal data-delay="0">
+            <div class="skill-icon-wrap skill-html">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <h3 class="skill-name">Frontend Development</h3>
+            <p class="skill-desc">
+              Building clean, semantic, and performant interfaces with HTML5,
+              CSS3, and modern JavaScript.
+            </p>
+          </div>
+
+          <div class="skill-card" data-reveal data-delay="80">
+            <div class="skill-icon-wrap skill-responsive">
+              <i class="bi bi-phone"></i>
+            </div>
+            <h3 class="skill-name">Responsive Web Design</h3>
+            <p class="skill-desc">
+              Mobile-first layouts that adapt smoothly across phones, tablets,
+              and desktops.
+            </p>
+          </div>
+
+          <div class="skill-card" data-reveal data-delay="160">
+            <div class="skill-icon-wrap skill-uiux">
+              <i class="bi bi-palette"></i>
+            </div>
+            <h3 class="skill-name">UI/UX Design</h3>
+            <p class="skill-desc">
+              Designing intuitive, visually engaging interfaces focused on
+              usability and user experience.
+            </p>
+          </div>
+
+          <div class="skill-card" data-reveal data-delay="240">
+            <div class="skill-icon-wrap skill-github">
+              <i class="bi bi-tools"></i>
+            </div>
+            <h3 class="skill-name">Website Maintenance</h3>
+            <p class="skill-desc">
+              Keeping sites fast, accessible, and up to date with ongoing fixes
+              and content updates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+       BLOG / ARTICLES SECTION
+  ================================================== -->
+    <section id="blog" class="section blog">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-eyebrow">From The Blog</span>
+          <h2 class="section-title">
+            Latest <span class="gradient-text">Articles</span>
+          </h2>
+          <p class="section-subtitle">
+            Thoughts and notes on frontend development, performance, and
+            building for everyone.
+          </p>
+        </div>
+
+        <!-- Dynamic Blog Grid (Rendered by API) -->
+        <div class="blog-grid" id="blogGrid">
+          <!-- Blog articles will be rendered here by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+       TESTIMONIALS SECTION
+  ================================================== -->
+    <section id="testimonials" class="section testimonials">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-eyebrow">Social Proof</span>
+          <h2 class="section-title">
+            What People <span class="gradient-text">Say About Me</span>
+          </h2>
+          <p class="section-subtitle">
+            Feedback from colleagues, mentors, and clients I've worked with.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card" data-reveal data-delay="0">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <svg
+                  viewBox="0 0 80 80"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Avatar initials AH"
+                >
+                  <rect width="80" height="80" rx="40" fill="#9926f0" />
+                  <text
+                    x="40"
+                    y="45"
+                    font-size="32"
+                    font-weight="bold"
+                    fill="white"
+                    text-anchor="middle"
+                  >
+                    AH
+                  </text>
+                </svg>
+              </div>
+              <div>
+                <h4 class="testimonial-name">Ahmad Hassan</h4>
+                <p class="testimonial-role">Frontend Mentor</p>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Muhammad demonstrates exceptional attention to detail and a
+              strong grasp of modern web technologies. His ability to create
+              responsive, accessible interfaces is impressive for someone at his
+              experience level."
+            </p>
+            <div
+              class="testimonial-rating"
+              role="img"
+              aria-label="5 out of 5 stars"
+            >
+              <i class="bi bi-star-fill" aria-hidden="true"></i>
+              <i class="bi bi-star-fill" aria-hidden="true"></i>
+              <i class="bi bi-star-fill" aria-hidden="true"></i>
+              <i class="bi bi-star-fill" aria-hidden="true"></i>
+              <i class="bi bi-star-fill" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-reveal data-delay="120">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <svg
+                  viewBox="0 0 80 80"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Avatar initials SA"
+                >
+                  <rect width="80" height="80" rx="40" fill="#7b2ff7" />
+                  <text
+                    x="40"
+                    y="45"
+                    font-size="32"
+                    font-weight="bold"
+                    fill="white"
+                    text-anchor="middle"
+                  >
+                    SA
+                  </text>
+                </svg>
+              </div>
+              <div>
+                <h4 class="testimonial-name">Sarah Ahmed</h4>
+                <p class="testimonial-role">Project Collaborator</p>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Working with Muhammad on our collaborative project was a great
+              experience. He's proactive, quick to learn, and always ready to
+              help his teammates. His code is clean and well-documented."
+            </p>
+            <div
+              class="testimonial-rating"
+              role="img"
+              aria-label="5 out of 5 stars"
+            >
+              <i class="bi bi-star-fill" aria-hidden="true"></i>
+              <i class="bi bi-star-fill" aria-hidden="true"></i>
+              <i class="bi bi-star-fill" aria-hidden="true"></i>
+              <i class="bi bi-star-fill" aria-hidden="true"></i>
+              <i class="bi bi-star-fill" aria-hidden="true"></i>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-reveal data-delay="240">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <svg
+                  viewBox="0 0 80 80"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Avatar initials FA"
+                >
+                  <rect width="80" height="80" rx="40" fill="#bb6ef5" />
+                  <text
+                    x="40"
+                    y="45"
+                    font-size="32"
+                    font-weight="bold"
+                    fill="white"
+                    text-anchor="middle"
+                  >
+                    FA
+                  </text>
+                </svg>
+              </div>
+              <div>
+                <h4 class="testimonial-name">Fatima Ali</h4>
+                <p class="testimonial-role">University Instructor</p>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Muhammad is one of the most dedicated students I've taught. His
+              portfolio projects showcase excellent problem-solving skills and a
+              deep understanding of frontend development principles. Highly
+              recommended!"
+            </p>
+            <div
+              class="testimonial-rating"
+              role="img"
+              aria-label="5 out of 5 stars"
+            >
+              <i class="bi bi-star-fill" aria-hidden="true"></i>
+              <i class="bi bi-star-fill" aria-hidden="true"></i>
+              <i class="bi bi-star-fill" aria-hidden="true"></i>
+              <i class="bi bi-star-fill" aria-hidden="true"></i>
+              <i class="bi bi-star-fill" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+       CONTACT SECTION
+  ================================================== -->
+    <section id="contact" class="section contact">
+      <div class="contact-wave-top">
+        <svg
+          viewBox="0 0 1440 80"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,40 C360,90 1080,0 1440,40 L1440,0 L0,0 Z"
+            fill="#ffffff"
+          />
+        </svg>
+      </div>
+
+      <div class="container contact-container">
+        <div class="contact-info" data-reveal>
+          <span class="section-eyebrow section-eyebrow--light"
+            >Get In Touch</span
+          >
+          <h2 class="section-title contact-title">
+            Let's Build Something
+            <span class="gradient-text-light">Together</span>
+          </h2>
+          <p class="contact-desc">
+            I'm open to frontend internship opportunities, freelance
+            collaborations, and interesting projects. Drop me a message and I'll
+            get back to you.
+          </p>
+
+          <!-- Dynamic Contact Links (Rendered by API) -->
+          <div class="contact-links" id="contactLinks">
+            <!-- Contact links will be rendered here by script.js -->
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-reveal data-delay="150">
+          <form
+            class="contact-form"
+            id="contactForm"
+            novalidate
+            aria-label="Contact form"
+          >
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <div class="input-wrap">
+                <i class="bi bi-person-fill input-icon" aria-hidden="true"></i>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Muhammad Rashid"
+                  required
+                  minlength="2"
+                  maxlength="60"
+                  aria-describedby="nameError"
+                  aria-invalid="false"
+                  autocomplete="name"
+                />
+              </div>
+              <span class="form-error" id="nameError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <div class="input-wrap">
+                <i
+                  class="bi bi-envelope-fill input-icon"
+                  aria-hidden="true"
+                ></i>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="you@example.com"
+                  required
+                  maxlength="100"
+                  aria-describedby="emailError"
+                  aria-invalid="false"
+                  autocomplete="email"
+                />
+              </div>
+              <span class="form-error" id="emailError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <div class="input-wrap input-wrap--textarea">
+                <i
+                  class="bi bi-chat-left-text-fill input-icon"
+                  aria-hidden="true"
+                ></i>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-input form-textarea"
+                  placeholder="Tell me about your project or opportunity..."
+                  rows="5"
+                  required
+                  minlength="15"
+                  maxlength="800"
+                  aria-describedby="messageError messageCount"
+                  aria-invalid="false"
+                ></textarea>
+              </div>
+              <div class="form-meta-row">
+                <span class="form-error" id="messageError" role="alert"></span>
+                <span
+                  class="form-char-count"
+                  id="messageCount"
+                  aria-live="polite"
+                  >0 / 800</span
+                >
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary btn-full"
+              id="submitBtn"
+            >
+              <i class="bi bi-send-fill" aria-hidden="true"></i>
+              <span class="submit-btn-text">Send Message</span>
+            </button>
+            <div
+              class="form-success"
+              id="formSuccess"
+              role="status"
+              aria-live="polite"
+            >
+              <i class="bi bi-check-circle-fill" aria-hidden="true"></i> Message
+              sent! I'll be in touch soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+       FOOTER
+  ================================================== -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-accent">M</span>Rashid
+          </a>
+          <p class="footer-tagline">
+            Frontend Developer from Tando Jam, Pakistan.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <a
+            href="https://github.com/Rashid062-glitch"
+            class="social-icon"
+            aria-label="GitHub"
+            ><i class="bi bi-github" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/muhammad-rashid-07a3a4402?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            class="social-icon"
+            aria-label="LinkedIn"
+            ><i class="bi bi-linkedin" aria-hidden="true"></i
+          ></a>
+          <a
+            href="mailto:itainrashiid@gmail.com"
+            class="social-icon"
+            aria-label="Email"
+            ><i class="bi bi-envelope-fill" aria-hidden="true"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="year"></span> Muhammad Rashid. All rights reserved.
+        </p>
+      </div>
+
+      <a
+        href="#home"
+        class="back-to-top"
+        id="backToTop"
+        aria-label="Back to top"
+      >
+        <i class="bi bi-arrow-up" aria-hidden="true"></i>
+      </a>
+    </footer>
+
+    <!-- ================================================
+       PROJECT DETAILS MODAL
+  ================================================== -->
+    <div
+      class="modal-overlay"
+      id="projectModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+      hidden
+    >
+      <div class="modal-box" role="document">
+        <button
+          type="button"
+          class="modal-close"
+          id="modalClose"
+          aria-label="Close project details"
+        >
+          <i class="bi bi-x-lg" aria-hidden="true"></i>
+        </button>
+
+        <div class="modal-gallery" id="modalGallery">
+          <!-- Gallery slides injected by JS -->
+        </div>
+
+        <div class="modal-content">
+          <h3 class="modal-title" id="modalTitle"></h3>
+          <p class="modal-desc" id="modalDesc"></p>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title">
+              <i class="bi bi-tools" aria-hidden="true"></i> Technologies Used
+            </h4>
+            <div class="modal-tags" id="modalTech"></div>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title">
+              <i class="bi bi-stars" aria-hidden="true"></i> Features
+            </h4>
+            <ul class="modal-list" id="modalFeatures"></ul>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title">
+              <i class="bi bi-exclamation-triangle" aria-hidden="true"></i>
+              Challenges
+            </h4>
+            <p class="modal-text" id="modalChallenges"></p>
+          </div>
+
+          <div class="modal-section">
+            <h4 class="modal-section-title">
+              <i class="bi bi-lightbulb" aria-hidden="true"></i> Solutions
+            </h4>
+            <p class="modal-text" id="modalSolutions"></p>
+          </div>
+
+          <div class="modal-meta-row">
+            <span class="modal-duration"
+              ><i class="bi bi-calendar-range" aria-hidden="true"></i>
+              <span id="modalDuration"></span
+            ></span>
+          </div>
+
+          <div class="modal-actions">
+            <a
+              href="#"
+              class="btn btn-outline-dark"
+              id="modalGithub"
+              target="_blank"
+              rel="noopener"
+              ><i class="bi bi-github" aria-hidden="true"></i> GitHub</a
+            >
+            <a
+              href="#"
+              class="btn btn-primary"
+              id="modalLive"
+              target="_blank"
+              rel="noopener"
+              ><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Live
+              Demo</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================
+       BLOG ARTICLE MODAL
+  ================================================== -->
+    <div
+      class="modal-overlay"
+      id="articleModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="articleModalTitle"
+      hidden
+    >
+      <div class="modal-box modal-box--article" role="document">
+        <button
+          type="button"
+          class="modal-close"
+          id="articleModalClose"
+          aria-label="Close article"
+        >
+          <i class="bi bi-x-lg" aria-hidden="true"></i>
+        </button>
+
+        <img
+          class="modal-article-img"
+          id="articleModalImg"
+          src=""
+          alt=""
+          width="800"
+          height="450"
+          loading="lazy"
+        />
+
+        <div class="modal-content">
+          <div class="blog-meta" id="articleModalMeta"></div>
+          <h3 class="modal-title" id="articleModalTitle"></h3>
+          <div class="modal-article-body" id="articleModalBody"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

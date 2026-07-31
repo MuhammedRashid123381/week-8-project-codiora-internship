@@ -1,0 +1,46 @@
+{
+  "name": "Muhammad Rashid",
+  "profession": "Frontend Developer",
+  "bio": "Passionate about crafting responsive, visually appealing web applications with clean code and modern UI/UX principles.",
+  "resume": "cv/mycv.pdf",
+  "heroImage": "images/profile-hero.jpg",
+  "stats": [
+    {
+      "number": "1+",
+      "label": "Year Exp."
+    },
+    {
+      "number": "7+",
+      "label": "Skills"
+    },
+    {
+      "number": "4+",
+      "label": "Projects"
+    }
+  ],
+  "socialLinks": [
+    {
+      "icon": "bi-github",
+      "url": "https://github.com/Rashid062-glitch",
+      "label": "GitHub"
+    },
+    {
+      "icon": "bi-linkedin",
+      "url": "https://www.linkedin.com/in/muhammad-rashid-07a3a4402",
+      "label": "LinkedIn"
+    },
+    {
+      "icon": "bi-envelope-fill",
+      "url": "mailto:itainrashiid@gmail.com",
+      "label": "Email"
+    }
+  ],
+  "about": {
+    "description": "I'm Muhammad Rashid, a BSIT student at Sindh Agriculture University, Tando Jam, with over a year of hands-on frontend development experience. I thrive on building clean, performant, and accessible web interfaces that users genuinely enjoy.",
+    "descriptionExtended": "My interest spans modern CSS techniques, JavaScript interactivity, responsive layout systems, and UI/UX design thinking. Every project I take on is an opportunity to push the craft forward.",
+    "experience": "1+ Year Frontend Development",
+    "education": "BSIT - Sindh Agriculture University Tando Jam Sindh Pakistan",
+    "careerGoals": "Become A Full-stack Developer",
+    "interests": "UI/UX Design, Modern Web Tech"
+  }
+}

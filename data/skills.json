@@ -1,0 +1,58 @@
+[
+  {
+    "id": "html",
+    "name": "HTML5",
+    "icon": "bi-filetype-html",
+    "percentage": 92,
+    "category": "markup",
+    "description": "Semantic markup, accessibility, SEO-friendly structure."
+  },
+  {
+    "id": "css",
+    "name": "CSS3",
+    "icon": "bi-filetype-css",
+    "percentage": 88,
+    "category": "styling",
+    "description": "Flexbox, Grid, animations, custom properties."
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "icon": "bi-filetype-js",
+    "percentage": 80,
+    "category": "scripting",
+    "description": "ES6+, DOM manipulation, async programming."
+  },
+  {
+    "id": "responsive",
+    "name": "Responsive Design",
+    "icon": "bi-phone-fill",
+    "percentage": 90,
+    "category": "design",
+    "description": "Mobile-first layouts, media queries, fluid grids."
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "icon": "bi-git",
+    "percentage": 75,
+    "category": "tools",
+    "description": "Version control, branching strategies, commits."
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "icon": "bi-github",
+    "percentage": 78,
+    "category": "tools",
+    "description": "Repository management, collaboration, GitHub Pages."
+  },
+  {
+    "id": "uiux",
+    "name": "UI/UX Design",
+    "icon": "bi-palette-fill",
+    "percentage": 70,
+    "category": "design",
+    "description": "Design thinking, wireframing, visual hierarchy."
+  }
+]

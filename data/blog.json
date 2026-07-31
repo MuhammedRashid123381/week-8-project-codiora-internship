@@ -1,0 +1,32 @@
+[
+  {
+    "id": "css-techniques",
+    "title": "Modern CSS Techniques Every Frontend Developer Should Know",
+    "category": "CSS",
+    "date": "Jun 12, 2026",
+    "readTime": "6 min read",
+    "image": "images/blog_1.jpg",
+    "description": "From container queries to the new color functions, a practical tour of the CSS features that are changing how we build layouts in 2026.",
+    "body": "<p>CSS has quietly absorbed a huge amount of layout and logic that used to require JavaScript. Container queries let a component respond to the size of its parent rather than the viewport, which makes truly reusable components possible for the first time.</p><h4>Container Queries</h4><p>Instead of writing media queries against the screen, you can now ask \"how much space does this specific container have?\" This is a game changer for design systems, since a card component can look right whether it's in a sidebar or a full-width grid.</p><h4>:has() and Relational Styling</h4><p>The :has() selector lets you style a parent based on what's inside it \u2014 something that previously needed a JavaScript class toggle. Form fields that highlight their wrapper on focus, or cards that change layout when they contain an image, are now pure CSS.</p><h4>Custom Properties as State</h4><p>CSS variables aren't just for color tokens. They can hold numeric state that JavaScript updates, while every visual consequence of that state lives entirely in the stylesheet \u2014 keeping logic and presentation cleanly separated.</p>"
+  },
+  {
+    "id": "js-performance",
+    "title": "JavaScript Performance Optimization Tips",
+    "category": "JavaScript",
+    "date": "Jun 5, 2026",
+    "readTime": "8 min read",
+    "image": "images/blog_2.jpg",
+    "description": "Debouncing, event delegation, lazy loading, and the small habits that keep interfaces fast even as a codebase grows.",
+    "body": "<p>Most performance problems in frontend JavaScript come from doing too much work too often, not from any single slow operation. A handful of habits fix the majority of cases.</p><h4>Event Delegation</h4><p>Attaching one listener to a parent element instead of dozens to individual children cuts memory overhead and avoids the cost of re-binding listeners every time the list re-renders.</p><h4>Debounce and Throttle</h4><p>Scroll and resize handlers fire far more often than the UI actually needs to update. Wrapping expensive handlers in a debounce or throttle, or simply batching work inside requestAnimationFrame, keeps the main thread free.</p><h4>Lazy Loading</h4><p>Deferring images, scripts, and components until they're actually needed shrinks the initial bundle and gets the page interactive sooner, which matters far more to perceived performance than shaving milliseconds off code that already runs fast.</p>"
+  },
+  {
+    "id": "web-accessibility",
+    "title": "Web Accessibility Best Practices",
+    "category": "Accessibility",
+    "date": "May 28, 2026",
+    "readTime": "7 min read",
+    "image": "images/blog_3.jpg",
+    "description": "A practical checklist for semantic markup, keyboard navigation, and ARIA patterns that make your site usable for everyone.",
+    "body": "<p>Accessibility isn't a separate feature bolted onto a finished site \u2014 it's a property of how the markup is structured from the start. Most of the work is just doing HTML correctly.</p><h4>Semantic Markup First</h4><p>A <code>&lt;button&gt;</code> gets keyboard focus, a role, and click handling for free. A <code>&lt;div&gt;</code> styled to look like one gets none of that until you rebuild it by hand with ARIA. Reaching for the right element first saves enormous effort later.</p><h4>Keyboard Navigation</h4><p>Every interactive element \u2014 cards, modals, filters \u2014 needs to be reachable and operable with Tab, Enter, and Escape alone. If a mouse is required to use a feature, it's broken for a meaningful number of users.</p><h4>ARIA as a Last Resort</h4><p>ARIA attributes describe a custom widget's role and state to assistive technology, but they don't grant any behavior. They should supplement semantic HTML, not replace it.</p>"
+  }
+]

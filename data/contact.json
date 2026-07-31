@@ -1,0 +1,22 @@
+{
+  "email": "itainrashiid@gmail.com",
+  "phone": "+92-XXXXXXXXX",
+  "address": "Tando Jam, Sindh, Pakistan",
+  "socialLinks": [
+    {
+      "icon": "bi-github",
+      "url": "https://github.com/Rashid062-glitch",
+      "label": "GitHub"
+    },
+    {
+      "icon": "bi-linkedin",
+      "url": "https://www.linkedin.com/in/muhammad-rashid-07a3a4402",
+      "label": "LinkedIn"
+    },
+    {
+      "icon": "bi-envelope-fill",
+      "url": "mailto:itainrashiid@gmail.com",
+      "label": "Email"
+    }
+  ]
+}

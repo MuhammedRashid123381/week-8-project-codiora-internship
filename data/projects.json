@@ -1,0 +1,78 @@
+[
+  {
+    "id": "music-player",
+    "title": "Music Player App",
+    "description": "A fully responsive music player featuring playback controls, a draggable progress bar, and a sleek modern UI built entirely with HTML, CSS, and vanilla JavaScript. Designed to feel native and tactile despite running in the browser.",
+    "category": "web",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Web Audio"],
+    "image": "music",
+    "features": [
+      "Play, pause, skip, and seek controls",
+      "Animated progress bar synced to playback",
+      "Responsive layout for mobile and desktop",
+      "Smooth hover and active-state micro-interactions"
+    ],
+    "challenges": "Keeping the progress bar perfectly in sync with audio playback while still allowing the user to drag-seek without stutter was the trickiest part, especially across different browser audio implementations.",
+    "solutions": "Used requestAnimationFrame instead of setInterval for the progress updates, and decoupled the drag-seek state from the live playback state so user input always takes priority over the audio element's timeupdate event.",
+    "duration": "2 Weeks",
+    "github": "https://github.com/Rashid062-glitch/Music_player_app_proejct.git",
+    "live": "https://rashid062-glitch.github.io/Music_player_app_proejct/"
+  },
+  {
+    "id": "image-gallery",
+    "title": "Image Gallery",
+    "description": "A responsive image gallery with a masonry-style grid, lightbox preview, and smooth transition effects, built to give visual projects a clean and engaging browsing experience.",
+    "category": "web",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "CSS Grid"],
+    "image": "gallery",
+    "features": [
+      "Masonry-style responsive grid layout",
+      "Lightbox preview with keyboard navigation",
+      "Lazy-loaded images for fast initial paint",
+      "Smooth fade and scale transitions"
+    ],
+    "challenges": "Building a masonry layout that stayed performant and didn't reflow awkwardly while images were still loading was the main hurdle.",
+    "solutions": "Reserved aspect-ratio space for every image ahead of load and used CSS Grid with dense packing rather than JavaScript-calculated positions, which removed layout shift entirely.",
+    "duration": "1.5 Weeks",
+    "github": "https://github.com/Rashid062-glitch/Image_Gallery_project.git",
+    "live": "https://rashid062-glitch.github.io/Image_Gallery_project/"
+  },
+  {
+    "id": "login-form",
+    "title": "Login Form",
+    "description": "A modern authentication UI featuring real-time form validation, a password visibility toggle, fully responsive layout, and polished micro-interactions throughout the flow.",
+    "category": "uiux",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "image": "login",
+    "features": [
+      "Real-time inline validation with helpful error text",
+      "Password show/hide toggle",
+      "Accessible labels and focus states",
+      "Responsive card layout for any screen size"
+    ],
+    "challenges": "Balancing strict validation with a friendly user experience — too aggressive, and it feels punishing; too lax, and it lets bad input through.",
+    "solutions": "Validation runs on blur and on submit rather than on every keystroke, with errors clearing live as soon as the user starts correcting them.",
+    "duration": "1 Week",
+    "github": "https://github.com/Rashid062-glitch/Loginform_project.git",
+    "live": "https://rashid062-glitch.github.io/Loginform_project/"
+  },
+  {
+    "id": "weather-app",
+    "title": "Weather App",
+    "description": "A clean weather application with real-time data display, city search functionality, and a responsive layout with clear, glanceable weather visualizations.",
+    "category": "data",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "REST API"],
+    "image": "weather",
+    "features": [
+      "City search with live weather lookup",
+      "Current temperature, conditions, and forecast summary",
+      "Responsive card-based dashboard layout",
+      "Graceful loading and error states"
+    ],
+    "challenges": "Handling inconsistent or missing data from the weather API without breaking the layout was an early pain point.",
+    "solutions": "Added defensive fallbacks for every data field and a dedicated empty/error state in the UI so the interface never looks broken, even when a city has no data.",
+    "duration": "2 Weeks",
+    "github": "#",
+    "live": "#"
+  }
+]

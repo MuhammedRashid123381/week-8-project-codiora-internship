@@ -58,9 +58,6 @@ python3 -m http.server 8000
 
 Any static server works equally well (e.g. the VS Code "Live Server" extension).
 
-## Screenshots
-Add screenshots of the Hero, Projects, and Blog sections here before sharing.
-
 ## Accessibility & Performance Notes
 - Alt text provided on all meaningful images; decorative icons marked `aria-hidden`
 - Modals trap focus and close on `Escape` or outside click
